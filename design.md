@@ -1,27 +1,25 @@
 # The Design of a Database-Linked Website for NCEA Level 2
 
-Project Name: **PROJECT NAME HERE**
+Project Name: **Cooking Website Storement**
 
-Project Author: **YOUR NAME HERE**
+Project Author: **Phanumat Piasupan**
 
 Assessment Standards: **91892** and **91893**
 
 
 -------------------------------------------------
-
+//nD//
 ## System Requirements
+Some features that the website would need for it to be successful would be for the user to be able to add the cooking recipes in, and being able to remove it, they also need to be able to edit the details of website and have a link so that they can click to access the website just in case they needed to. 
 
 ### Identified Need or Problem
-
-Replace this text with a clearly stated problem or need that exists that your project will attempt to solve / fulfil.
-
+Home cooking enthusiasts like my dad are always on the lookout for recipes. They enjoy searching them up online. However it is not easy to keep track of all the cooking recipes since they often happens to not be in a single website. A system that helped Home cooking enthusiasts to store cooking recipes websites would be useful.
 ### End-User Requirements
-
-Replace this text with a description of your typical end-users and their specific needs / expectations / requirements.
+Home cooking enthusiasts come from all walks of life, and can be young or old. This means that any system must use clear and simple language, and be suitable for people of any age. It should be accessible in terms of colours and fonts used. The level of IT expertise of the users could vary from high to very low. This means that the system must be very intuitive to use, So the system should be nicely designed, maybe with food theme.
 
 ### Proposed Solution
 
-Replace this text with a brief statement about the system that you intend to create, including the key functionality it should have.
+A solution would be to create an iframe webstie that allows the user to store cooking recipes website and being able to add more or remove it and also be able to adjust the size of the iframes website as well as 
 
 
 -------------------------------------------------
