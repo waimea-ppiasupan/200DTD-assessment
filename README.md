@@ -21,3 +21,10 @@ Testing of features and further design revisions can be found [here](testing.md)
 ## project Mascot
 
 ![alt text](images/Healthy-Food-PNG-Picture.png)
+
+## Documentation
+
+The following documents support this project:
+
+- [Design & Review](Design.md)
+- [Development & Testing](Development.md)
