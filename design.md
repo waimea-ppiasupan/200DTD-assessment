@@ -10,16 +10,17 @@ Assessment Standards: **91892** and **91893**
 -------------------------------------------------
 //nD//
 ## System Requirements
-Some features that the website would need for it to be successful would be for the user to be able to add the cooking recipes in, and being able to remove it, they also need to be able to edit the details of website and have a link so that they can click to access the website just in case they needed to. 
+Some features that the website would need for it to be successful would be for the user (my dad) to be able to add the cooking recipes in, and being able to remove it, they also should also be able to adjust the size of the iframe as my dad seem fit and being able to add title and a breif note to each iframe so in that way my dad know what website is which, the langauge in the website also need to be simple enough for my dad to comprehend and some of the functionalities such as cancel, adding buttons etc need to be intuitive to my dad so in that way it would feels natural for him to use the website, thus he would have an easier time using it.
 
 ### Identified Need or Problem
 Home cooking enthusiasts like my dad are always on the lookout for recipes. They enjoy searching them up online. However it is not easy to keep track of all the cooking recipes since they often happens to not be in a single website. A system that helped Home cooking enthusiasts to store cooking recipes websites would be useful.
+
 ### End-User Requirements
 Home cooking enthusiasts like my dad can be old folks and may not be that familiar with using internet . This means that any system must use clear and simple language, and be suitable for people of his age. It should be accessible in terms of colours and fonts used. The level of IT expertise of the user like my dad should be simple to use. This means that the system must be very intuitive to use, So the system should be nicely designed, maybe with food theme would be good.
 
 ### Proposed Solution
 
-A solution would be to create an iframe website that allows the user to store cooking recipes website and being able to add more or remove it and also be able to adjust the size of the iframes website as well as having access to the website as a whole.
+A solution would be to create an iframe website that allows the user to store cooking recipes website and being able to add more or remove it and also be able to adjust the iframe inlcuding the size, the title and some breif note of what the iframe is about as well as having access to the website as a whole.
 
 
 -------------------------------------------------
@@ -29,113 +30,68 @@ A solution would be to create an iframe website that allows the user to store co
 
 
 1. Usability
-The usability of a system is about  how simple it is for the home cooking enthusiasts such as my dad to use the website.
-This can be measured by including:
 
-- making the system status clear, the Ui simple, clean and easy enough language to read and follow through, this means that the website should be kept at a minimalistic so that My dad can easily use the website without getting confused.
+The usability of a system is about how easy it is for home cooking enthusiasts like my dad to use the website. This can be measured by:
 
-- The Ui needs to be consistent, meaning a familiar layout as an example, so in that way my dad can have an easier time follow through the website since things are kept consistent, my dad will have an easier time using the website, due to the consistency in each page
+- Making the system status clear, the Home Cooking UI simple, clean and easy enough language to read and follow through, so the website should be kept minimalistic so my dad can easily find and follow his favourite recipes without getting confused.
 
-- How the Ui works should be intuitive to the user, meaning when my dad are using the functionality of the website, it should feels natural to him.
+- The Home Cooking UI needs to be consistent, meaning a familiar layout, like for example, same design for each recipe page, so my dad will have an easier time following through the website since things are kept consistent.
+
+- How the Home Cooking UI works should be intuitive to the user, meaning when my dad is using the functionality of the website, like searching for recipes or bookmarking favourites, it should feel natural to him, like he's using a familiar kitchen tool.
 
 ### IMPLICATION NAME HERE
-2.Functionality
-The functionality of a system relates to how well it works for the end-user such as a home cooking enthusiast like my dad, in terms of meeting its intended purpose.
-functionality can be measured by:
+2. Functionality
 
-- Does it do everything it is supposed to, and meets its purpose, e.g. can my dad add and delete the websites as he wanted to?, can he adjust the size of the iframe and can he have access to it?
+The functionality of a system is about what it can do for home cooking enthusiasts like my dad. This can be measured by:
 
-- Is it bug-free and doesn't crash?
+- The website can display a list of recipes, allowing my dad to browse through his collection.
 
-- Does is work as expected from my dad's point-of-view?, is it simple enough for him to follow through?
+- The website can provide a search function, allowing my dad to find specific iframe by name.
 
-And When I create a digital technologies outcome, I should try to:
-
-- Fully satisfy my dad's needs for the website being able to store websites in an iframe form.
-
-- Fully meet the user's requirements, being able to store, access and delete the iframe.
-
-- Make sure that it copes with all inputs (normal, boundary and abnormal)
+- The website can allow my dad to bookmark his favourite recipes, making it easy for him to access them later.
 
 
 ### IMPLICATION NAME HERE
 3.Aesthetics
-The aesthetic implications of a website relate to how it looks in terms of design.
-Usability can be measured by:
+The aesthetics of a system is about how it looks and feels for home cooking enthusiasts like my dad. This can be measured by:
 
-- Does the design appeal to my dad?, e.g. does it look good, relate to the theme and easy design for my dad to understand its purposes?
+- The website having a clean and simple design, making it easy for my dad to focus on the recipes.
 
-- Does the design follow conventions?
+- The website using a consistent layout, so my dad can easily find what he's looking for.
 
-- Has good use been made of colour, font, positioning, etc.?
-
-When I create a digital technologies outcome, I should try to:
-
-- Create an overall design that appeals to the end-users like my dad.
-
-- Create an overall design that is suitable for the outcome's purpose
-
-- Use colours that work effectively together to create a pleasing effect
-
-- Use fonts that work well with the design and convey the appropriate 'feel'
-
-- Position elements of the design in a way that is balanced
-
-- Group / seperate elements to focus attention and/or link related items
-
-
+- The website having a visually appealing colour, making it enjoyable for my dad to use.
 
 
 
 
 ### IMPLICATION NAME HERE
 4.End-Users
-The end-user implications of a digital technology or digital outcome (e.g. a website) are connected to the specific needs of the end-user(s).
-Usability can be measured by:
+ How easy it is for my dad to use the website, even if he's not tech-skilled.
 
-- Are the end-users' specific needs considered (age, education level, interests, etc)?
+- How well the website works on different devices, such as his phone or tablet, so he can use it wherever he wants.
 
-- Does it appeal to the correct demographic?
+- How clear and simple the instructions are, so my dad can easily find and follow his favourite recipes.
 
-- Does is work on the type(s) of device the end-users are likely to use?
+- How much control my dad has over the website's functionality, so he can customize his experience.
 
-When I create a digital technologies outcome, I should try to...
-
-- Know as much as possible about your end-user(s) in terms of age, gender, interests, etc.
-
-- Use language and other content appropriate to your end-user(s)
-
-- Make regular use of end-user feedback to guide your design and implementation
-
-- Ensure it works on a range of devices, especially those likely to be used by the end-user(s)
-
+- How well the website protects my dad's information, so he can feel safe using it.
 
 
 
 
 ### IMPLICATION NAME HERE
 5.Accessibility
-The accessibility implications of a digital technology or digital outcome (e.g. a website) involve ensuring it is available to, and can be used by, all end-users, regardless of their abilities.
+The accessibility of a system is about how easy it is for people with disabilities to use, including my dad. This can be measured by:
 
-Usability can be measured by:
+- How well the website works with screen readers, so my dad can use it even if he has trouble seeing.
 
-- Can all end-users access the content and functionality, include those with impaired vision, colour-blindness, dyslexia, etc.?
+- How easy it is for my dad to navigate the website using only his keyboard, in case he has trouble using a mouse.
 
-- Is the outcome accessible on a range of devices?
+- How clear and simple the language is, so my dad can understand it even if he has trouble reading.
 
-When I create a digital technologies outcome, I should try to...
+- How consistent the website's layout is, so my dad can easily find what he's looking for.
 
--Select colour / tone combinations to give good levels of contrast to aid in accessing text / icons / graphics
-
--Select fonts / text sizes to make sure text is easily readable on all screen sizes
-
--Provide 'alt' text for all images (e.g. for screen-reader software to read aloud)
-
--Provide appropriate structure (e.g. via the correct mark-up) to aid in understanding the content
-
--Make UI components accessible in terms of size / target area, etc.
-
-
+- How well the website provides alternative text for images, so my dad can understand the content even if he can't see the images.
 
 
 
