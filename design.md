@@ -8,17 +8,21 @@ Assessment Standards: **91892** and **91893**
 
 
 -------------------------------------------------
-//nD//
+
 ## System Requirements
-Some features that the website would need for it to be successful would be for the user (my dad) to be able to add the cooking recipes in, and being able to remove it, they also should also be able to adjust the size of the iframe as my dad seem fit and being able to add title and a breif note to each iframe so in that way my dad know what website is which, the langauge in the website also need to be simple enough for my dad to comprehend and some of the functionalities such as cancel, adding buttons etc need to be intuitive to my dad so in that way it would feels natural for him to use the website, thus he would have an easier time using it.
 
 ### Identified Need or Problem
+
 Home cooking enthusiasts like my dad are always on the lookout for recipes. They enjoy searching them up online. However it is not easy to keep track of all the cooking recipes since they often happens to not be in a single website. A system that helped Home cooking enthusiasts to store cooking recipes websites would be useful.
 
 ### End-User Requirements
+
 Home cooking enthusiasts like my dad can be old folks and may not be that familiar with using internet . This means that any system must use clear and simple language, and be suitable for people of his age. It should be accessible in terms of colours and fonts used. The level of IT expertise of the user like my dad should be simple to use. This means that the system must be very intuitive to use, So the system should be nicely designed, maybe with food theme would be good.
 
 ### Proposed Solution
+
+
+Some features that the website would need for it to be successful would be for the user (my dad) to be able to add the cooking recipes in, and being able to remove it, they also should also be able to adjust the size of the iframe as my dad seem fit and being able to add title and a breif note to each iframe so in that way my dad know what website is which, the langauge in the website also need to be simple enough for my dad to comprehend and some of the functionalities such as cancel, adding buttons etc need to be intuitive to my dad so in that way it would feels natural for him to use the website, thus he would have an easier time using it.
 
 A solution would be to create an iframe website that allows the user to store cooking recipes website and being able to add more or remove it and also be able to adjust the iframe inlcuding the size, the title and some breif note of what the iframe is about as well as having access to the website as a whole.
 
@@ -26,10 +30,8 @@ A solution would be to create an iframe website that allows the user to store co
 -------------------------------------------------
 
 ## Relevant Implications
-### IMPLICATION NAME HERE
 
-
-1. Usability
+### 1. Usability
 
 The usability of a system is about how easy it is for home cooking enthusiasts like my dad to use the website. This can be measured by:
 
@@ -39,8 +41,7 @@ The usability of a system is about how easy it is for home cooking enthusiasts l
 
 - How the Home Cooking UI works should be intuitive to the user, meaning when my dad is using the functionality of the website, like searching for recipes or bookmarking favourites, it should feel natural to him, like he's using a familiar kitchen tool.
 
-### IMPLICATION NAME HERE
-2. Functionality
+### 2. Functionality
 
 The functionality of a system is about what it can do for home cooking enthusiasts like my dad. This can be measured by:
 
@@ -51,8 +52,8 @@ The functionality of a system is about what it can do for home cooking enthusias
 - The website can allow my dad to bookmark his favourite recipes, making it easy for him to access them later.
 
 
-### IMPLICATION NAME HERE
-3.Aesthetics
+### 3.Aesthetics
+
 The aesthetics of a system is about how it looks and feels for home cooking enthusiasts like my dad. This can be measured by:
 
 - The website having a clean and simple design, making it easy for my dad to focus on the recipes.
@@ -64,9 +65,9 @@ The aesthetics of a system is about how it looks and feels for home cooking enth
 
 
 
-### IMPLICATION NAME HERE
-4.End-Users
- How easy it is for my dad to use the website, even if he's not tech-skilled.
+### 4.End-Users
+
+How easy it is for my dad to use the website, even if he's not tech-skilled.
 
 - How well the website works on different devices, such as his phone or tablet, so he can use it wherever he wants.
 
@@ -79,8 +80,8 @@ The aesthetics of a system is about how it looks and feels for home cooking enth
 
 
 
-### IMPLICATION NAME HERE
-5.Accessibility
+### 5.Accessibility
+
 The accessibility of a system is about how easy it is for people with disabilities to use, including my dad. This can be measured by:
 
 - How well the website works with screen readers, so my dad can use it even if he has trouble seeing.

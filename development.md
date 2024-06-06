@@ -20,13 +20,13 @@ Today I am working on creating a database design for my website and also design 
 
 
 
-### DATE HERE
-20/05/24
+### 20/05/24
+
 Today I am working on a more simplified version of my website design:
 ![Alt text](images/flow2.png)
 
-### DATE HERE
-21/05/24
+### 21/05/24
+
 Today I am working on my flow chart version 3. I tried to simplify it by excluding/cutting out unnecessary part that dosen't need to be shown and try to keep it breif to make it smaller while also keeping the design at a stage where it includes the whole concept of what the website is about
 
 ![Alt text](images/flow3.png)
@@ -34,13 +34,14 @@ Today I am working on my flow chart version 3. I tried to simplify it by excludi
 
 
 
-### DATE HERE
-27/05/24:
+### 27/05/24
+
 Today I am testing out design my version 1 of user interface and see how is it working on each device platform that my dad has access to: 
-![Alt text](image.png)
-![Alt text](image-1.png)
-![Alt text](image-2.png)
-![Alt text](image-3.png)
+![Alt text](images/image.png)
+![Alt text](images/image-1.png)
+![Alt text](images/image-2.png)
+![Alt text](images/image-3.png)
+
 ### DATE HERE
 
 Replace this test with what you are working on
