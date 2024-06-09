@@ -38,16 +38,21 @@ Today I am working on my flow chart version 3. I tried to simplify it by excludi
 
 Today I am testing out design my version 1 of user interface and see how is it working on each device platform that my dad has access to: 
 ![Alt text](images/image.png)
+
 ![Alt text](images/image-1.png)
+for this one, I thnk I need to adjust the headers a bit since it is being hidden by the front camera of the phone
+
 ![Alt text](images/image-2.png)
+for this one again, I thnk I need to adjust the headers a bit since it is being hidden by the front camera of the phone, but however i am just showing the add button function in this one.
 ![Alt text](images/image-3.png)
 
-### DATE HERE
+### 10/06/24
+Today I am focusing getting my colour choices for my 1st choice
+![Alt text](colour1-add-form.png)
+Here is my first choice for my add form.
 
-Replace this test with what you are working on
-
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
-
+![Alt text](colour1-home&save-page.png)
+Here is my first choice of colour for my homepage and my save page
 ### DATE HERE
 
 Replace this test with what you are working on
