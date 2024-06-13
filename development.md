@@ -10,7 +10,6 @@ Assessment Standards: **91892** and **91893**
 -------------------------------------------------
 
 ## Design, Development and Testing Log
-v s sss a asazzz
 ### 16/05/2024
 
 Today I am working on creating a database design for my website and also design for UI:
@@ -48,11 +47,11 @@ for this one again, I thnk I need to adjust the headers a bit since it is being 
 
 ### 10/06/24
 Today I am focusing getting my colour choices for my 1st choice
-![Alt text](colour1-add-form.png)
+![Alt text](images/colour1-add-form.png)
 Here is my first choice for my add form.
 
-![Alt text](colour1-home&save-page.png)
+![Alt text](images/colour1-home&save-page.png)
 Here is my first choice of colour for my homepage and my save page
 ### 11/06/24
 Today I've been working on my version 3
-![Alt text](image.png)
+![Alt text](images/images1.png)

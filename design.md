@@ -21,10 +21,19 @@ Home cooking enthusiasts like my dad can be old folks and may not be that famili
 
 ### Proposed Solution
 
+Features that the website would need to have for it to be successful would be:
 
-Some features that the website would need for it to be successful would be for the user (my dad) to be able to add the cooking recipes in, and being able to remove it, they also should also be able to adjust the size of the iframe as my dad seem fit and being able to add title and a breif note to each iframe so in that way my dad know what website is which, the langauge in the website also need to be simple enough for my dad to comprehend and some of the functionalities such as cancel, adding buttons etc need to be intuitive to my dad so in that way it would feels natural for him to use the website, thus he would have an easier time using it.
+- adding recipes.
+- removing recipes.
+- saving recipes.
+- adjusting the size of recipes.
+- viewing recipes.
+- adding notes to recipes.
+- cancelling adding recipes.
+- cancelling removing recipes.
+- adding titles to recipes.
 
-A solution would be to create an iframe website that allows the user to store cooking recipes website and being able to add more or remove it and also be able to adjust the iframe inlcuding the size, the title and some breif note of what the iframe is about as well as having access to the website as a whole.
+And so a solution would be to create an iframe website that allows the user to store cooking recipes website and being able to add more or remove it and also be able to adjust the iframe inlcuding the size, the title and some breif note of what the iframe is about as well as having access to the website as a whole.
 
 
 -------------------------------------------------
