@@ -14,6 +14,8 @@ Assessment Standards: **91892** and **91893**
 
 Today I am working on creating a database design for my website and also design for UI:
 ![website functionality design](images/flow1.png)
+![database table](images/database.png)
+for my database. id = primary key. iframe_id = foreign key.
 
 
 
