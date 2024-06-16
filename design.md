@@ -42,17 +42,24 @@ And so a solution would be to create an iframe website that allows the user to s
 
 ### 1. Usability
 
-The usability of a system is about how easy it is for home cooking enthusiasts like my dad to use the website. This can be measured by:
+The usability of a system is about how easy it is for home cooking enthusiasts like my dad to use the website. This can be measured through Nielson's heuristic by:
 
-- Making the system status clear, the Home Cooking UI simple, clean and easy enough language to read and follow through, so the website should be kept minimalistic so my dad can easily find and follow his favourite recipes without getting confused.
+- Visibility of system status and asthetics and minimalistic design:
+ Which can be done by making the system status clear, the Home Cooking UI simple, clean and easy enough language to read and follow through, so the website should be kept minimalistic so my dad can easily find and follow his favourite recipes without getting confused.
 
-- The Home Cooking UI needs to be consistent, meaning a familiar layout, like for example, same design for each recipe page, so my dad will have an easier time following through the website since things are kept consistent.
+- Consistency and standards:
+The Home Cooking UI needs to be consistent, meaning a familiar layout, like for example, same design for each recipe page, so my dad will have an easier time following through the website since things are kept consistent.
 
-- How the Home Cooking UI works should be intuitive to the user, meaning when my dad is using the functionality of the website, like searching for recipes or bookmarking favourites, it should feel natural to him, like he's using a familiar kitchen tool.
+-Recognition rather than recall, and macth between system and the real world :
+ How the Home Cooking UI works should be intuitive to the user, meaning when my dad is using the functionality of the website, like searching for recipes or bookmarking favourites, it should feel natural to him, like he's using a familiar kitchen tool, which can be dopne by using elements that he finds relatable to the real world for button e.g. favoorite button could be symbolises using a book etc.
+
+ And with these in mind, I will make sure that I follow the mentioned Nielson heuristic to ensures the websites usability by keeping the ui consistent and simple and also make sure that I uses element that we could relate to the real worldfor my buttons and other features of the page.
+
+
 
 ### 2. Functionality
 
-The functionality of a system is about what it can do for home cooking enthusiasts like my dad. This can be measured by:
+The functionality of a system is about what it can do for home cooking enthusiasts like my dad. This can be measured through Nielson's heuristic by:
 
 - The website can display a list of recipes, allowing my dad to browse through his collection.
 
