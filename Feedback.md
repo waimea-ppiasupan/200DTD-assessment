@@ -20,6 +20,63 @@
 
 ## Database Structure	
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 - [ ] **A** Structure of the database is designed (tables, fields, data types, primary keys, relationships, etc.)
 - [ ] **M** Structure of the database is logical (i.e. DB is normalised, tables / fields are named logically, etc.)
 
