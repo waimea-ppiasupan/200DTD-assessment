@@ -1,0 +1,18 @@
+{
+    "git.autofetch": "all",
+    "git.replaceTagsWhenPull": true
+}
+
+{
+    // Other settings
+
+    "remotefs.remote": {
+        "dt": {
+            "scheme":   "sftp",
+            "host":     "dt.waimea.school.nz",
+            "rootPath": "/public_html",
+            "username": "ppiasupan",
+            "password": "cl@dr0Stis"
+        }
+    }
+}
