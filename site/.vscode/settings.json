@@ -3,16 +3,15 @@
     "git.replaceTagsWhenPull": true
 }
 
-{
-    // Other settings
-
-    "remotefs.remote": {
-        "dt": {
-            "scheme":   "sftp",
-            "host":     "dt.waimea.school.nz",
-            "rootPath": "/public_html",
-            "username": "ppiasupan",
-            "password": "cl@dr0Stis"
-        }
-    }
-}
+{ "name": "DT Server",
+"host": "dt.waimea.school.nz",
+"protocol": "sftp",
+"port": 22, 
+"username": "ppiasupan",
+"password": "cl@dr0Stis",
+ "remotePath": "/public_html/",
+ "ignore": [".git"],
+ "watcher": { "files": "**/*",
+ "autoUpload": true,
+ "autoDelete": true } }
+ 
