@@ -26,7 +26,7 @@ include 'partials/top.php'; ?>
     <input name="website" placeholder="im an npc.com" type="url" required>
     <input type="submit" value="add" required>
 </form>
-<h3>IFrame </h3>
+<h3>IFrame lol </h3>
 
     <iframe src="https://dt.waimea.school.nz" title="W3Schools Free Online Web Tutorials"></iframe>
         <iframe src="https://excalidraw.com/" title="W3Schools Free Online Web Tutorials"></iframe>
