@@ -1,7 +1,7 @@
 <?php 
 require '_functions.php';
 include 'partials/top.php'; ?>
-<h2> L</h2>
+<h2> </h2>
 
 <!doctype html>
 <html lang="en">
@@ -14,8 +14,8 @@ include 'partials/top.php'; ?>
   </head>
   <body>
     <main class="container">
-      <h1>L</h1>
-      <h2> New </h2>
+      <h1></h1>
+      <h2> New stuff</h2>
 
 <form method="post" action = "add-company.php">
     <label>code</label>
