@@ -3,7 +3,7 @@ require '_functions.php';
 include 'partials/top.php'; 
 ?>
 
-<h1> Gaming employee database</h1>
+<h1> </h1>
 <link rel="stylesheet" href="styles.css">
 <link href="games.php">
 
