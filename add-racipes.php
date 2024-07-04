@@ -3,9 +3,9 @@ require '_functions.php';
 include 'partials/top.php'; 
 ?>
 
-<h1> Gaming employee database</h1>
+<h1> Cooking recipes database</h1>
 <link rel="stylesheet" href="styles.css">
-<link href="games.php">
+<link href="cooking-recipes.php">
 
 <?php
 
