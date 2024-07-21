@@ -21,7 +21,7 @@ include 'partials/top.php'; ?>
     <iframe src="https://dt.waimea.school.nz" title="W3Schools Free Online Web Tutorials"></iframe>
         <iframe src="https://excalidraw.com/" title="W3Schools Free Online Web Tutorials"></iframe>
         <iframe src="https://www.waimea.school.nz/" title="W3Schools Free Online Web Tutorials"></iframe>
-          <iframe src="https://www.waimea.school.nz/" title="W3Schools Free Online Web Tutorials"></iframe>
+          
         </main>
   </body>
 </html>

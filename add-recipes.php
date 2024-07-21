@@ -19,7 +19,7 @@ echo ' website: ' . $website;
 
 $db = connectToDB();
 
-$query = 'INSERT INTO companies (code, name, website) VALUES (?,?,?)';
+$query = 'INSERT INTO iframe (iframe, notes, description) VALUES (?,?,?)';
 
 
       //setup a query to get all company info
