@@ -57,3 +57,7 @@ Here is my first choice of colour for my homepage and my save page
 ### 11/06/24
 Today I've been working on my version 3
 ![Alt text](images/images1.png)
+
+### 11/06/24
+![alt text](image.png)
+I managed to get my add-button added, and now i am just working on having it working.

@@ -10,33 +10,29 @@ include 'partials/top.php';
 <?php
 
 consolelog($_POST, 'POST Data');
-$id = strtoupper($_POST['iframe_id']);//force to upper case for strtrouupper
-$notes = $_POST['notes'];
-$website = $_POST['website'];
-echo ' iframe_id: ' . $id;
+$iframe_id = strtoupper($_POST['iframe_id'] ?? '');
+$notes = $_POST['notes'] ?? '';
+$website = $_POST['website'] ?? '';
+echo ' iframe_id: ' . $iframe_id;
 echo ' notes: ' . $notes;
 echo ' website: ' . $website;
 
 $db = connectToDB();
 
-$query = 'INSERT INTO iframe (website, notes, description) VALUES (?,?,?)';
+$insert_query = 'INSERT INTO iframe (website, notes, description) VALUES (?,?,?)';
+$select_query = 'SELECT * FROM instructions';
 
-
-      //setup a query to get all company info
-$query = 'SELECT * FROM iframe';
-//attempt to run the query
 try {
-    $stmt = $db ->prepare($query);
-    $stmt ->execute([$iframe_id,$notes,$website]);
-}
-catch (PDOException $e) {
-    consolelog($e->getMessage(), 'DB list fecth', ERROR);
+    $stmt = $db->prepare($select_query);
+    $stmt->execute();
+} catch (PDOException $e) {
+    $errorInfo = $db->errorInfo();
+    consolelog($errorInfo, 'DB list fetch', ERROR);
     die('There was an error getting data from the database');
-
 }
+
 echo '<p>success!!!</p>';
 //see what we got back
 
-
-          include 'partials/bottom.php';
+include 'partials/bottom.php';
 ?>
