@@ -21,10 +21,47 @@ include 'partials/top.php'; ?>
     <iframe src="https://dt.waimea.school.nz" title="W3Schools Free Online Web Tutorials"></iframe>
         <iframe src="https://excalidraw.com/" title="W3Schools Free Online Web Tutorials"></iframe>
         <iframe src="https://www.waimea.school.nz/" title="W3Schools Free Online Web Tutorials"></iframe>
-          
+          <iframe src="https://www.waimea.school.nz/" title="W3Schools Free Online Web Tutorials"></iframe>
         </main>
   </body>
 </html>
+<?php
+$db = connectToDB();
+      consolelog($db);
+
+      //setup a query to get all company info
+$query = 'SELECT * FROM iframe';
+//attempt to run the query
+try {
+    $stmt = $db ->prepare($query);
+    $stmt ->execute();
+    $iframes = $stmt ->fetchAll();
+
+}
+catch (PDOException $e) {
+    consolelog($e->getMessage(), 'DB list fecth', ERROR);
+    die('There was an error getting data from the database');
+
+}
+//see what we got back
+consolelog($iframes);
+echo '<ul>';
+echo '<ul id="company-list">';
+foreach($iframes as $iframe) {
+    echo '<li>';
+    echo '<a href="cooking-recipes.php?code='.$iframe['code'].'">';
+    echo $iframe['id'];
+    echo '</a>';
+    echo '<a href="'. $iframe['website'] .'">';
+    echo '🔗';
+    echo '</a>';
+    echo '</li>';
+
+}
+echo '<div id="add-button">
+          <a href="form-recipes.php">
+          add
+          </div>';
 
 
-<?php include 'partials/bottom.php'; ?>
+ include 'partials/bottom.php'; ?>

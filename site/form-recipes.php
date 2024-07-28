@@ -5,29 +5,29 @@ include 'partials/top.php';
 
 <h1> </h1>
 <link rel="stylesheet" href="styles.css">
-<link href="games.php">
+<link href="index.php">
 
 <?php
 
 consolelog($_POST, 'POST Data');
-$code = strtoupper($_POST['code']);//force to upper case for strtrouupper
-$name = $_POST['name'];
+$id = strtoupper($_POST['iframe_id']);//force to upper case for strtrouupper
+$notes = $_POST['notes'];
 $website = $_POST['website'];
-echo ' code: ' . $code;
-echo ' name: ' . $name;
+echo ' iframe_id: ' . $id;
+echo ' notes: ' . $notes;
 echo ' website: ' . $website;
 
 $db = connectToDB();
 
-$query = 'INSERT INTO companies (code, name, website) VALUES (?,?,?)';
+$query = 'INSERT INTO iframe (website, notes, description) VALUES (?,?,?)';
 
 
       //setup a query to get all company info
-$query = 'SELECT * FROM company';
+$query = 'SELECT * FROM iframe';
 //attempt to run the query
 try {
     $stmt = $db ->prepare($query);
-    $stmt ->execute([$code,$name,$website]);
+    $stmt ->execute([$iframe_id,$notes,$website]);
 }
 catch (PDOException $e) {
     consolelog($e->getMessage(), 'DB list fecth', ERROR);

@@ -15,8 +15,8 @@
     
      <nav>
         <a href="index.php">HOME</a>
-        <a href="games.php">Games</a>
-        <a href="employees.php">Employees</a>
+        <a href="games.php">saved</a>
+        
 </nav>
 </header>
 <main>
