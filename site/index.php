@@ -2,8 +2,8 @@
 require '_functions.php';
 include 'partials/top.php';
 
+// Connect to the database
 $db = connectToDB();
-consolelog($db);
 
 // Setup a query to get all iframe info
 $query = 'SELECT * FROM iframe';
@@ -11,7 +11,7 @@ $query = 'SELECT * FROM iframe';
 try {
     $stmt = $db->prepare($query);
     $stmt->execute();
-    $iframes = $stmt->fetchAll();
+    $iframes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     consolelog($e->getMessage(), 'DB list fetch', ERROR);
     die('There was an error getting data from the database');
@@ -33,21 +33,21 @@ consolelog($iframes);
   <body>
     <main class="container">
       <h1></h1>
-      <h2> New stuff</h2>
-      <h3>IFrame lol </h3>
+      <h2>New stuff</h2>
+      <h3>IFrame lol</h3>
 
       <?php foreach ($iframes as $iframe) : ?>
-        <iframe src="<?php echo $iframe['website']; ?>" title="<?php echo $iframe['id']; ?>"></iframe>
+        <iframe src="<?= htmlspecialchars($iframe['website']) ?>" title="<?= htmlspecialchars($iframe['id']) ?>"></iframe>
       <?php endforeach; ?>
 
       <ul id="company-list">
         <?php foreach ($iframes as $iframe) : ?>
           <li>
-            <a href="cooking-recipes.php?code=<?php echo $iframe['code']; ?>">
-              <?php echo $iframe['id']; ?>
+            <a href="cooking-recipes.php?code=<?= htmlspecialchars($iframe['code']) ?>">
+              <?= htmlspecialchars($iframe['id']) ?>
             </a>
-            <a href="<?php echo $iframe['website']; ?>">
-              🔗
+            <a href="<?= htmlspecialchars($iframe['website']) ?>">
+ 
             </a>
           </li>
         <?php endforeach; ?>

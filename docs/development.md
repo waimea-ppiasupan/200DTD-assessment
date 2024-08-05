@@ -61,3 +61,7 @@ Today I've been working on my version 3
 ### 11/06/24
 ![alt text](image.png)
 I managed to get my add-button added, and now i am just working on having it working.
+
+### 11/06/24
+![alt text](image4.png)
+I managed to get my add button working with my form working, now i just need to adjust its visual and UI abit to make it more convenient and appealing.
