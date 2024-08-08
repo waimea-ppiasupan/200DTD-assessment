@@ -43,7 +43,7 @@ consolelog($iframes);
       <ul id="company-list">
         <?php foreach ($iframes as $iframe) : ?>
           <li>
-            <a href="cooking-recipes.php?code=<?= htmlspecialchars($iframe['code']) ?>">
+            <a href="cooking-recipes.php?id=<?= htmlspecialchars($iframe['id']) ?>">
               <?= htmlspecialchars($iframe['id']) ?>
             </a>
             <a href="<?= htmlspecialchars($iframe['website']) ?>">

@@ -15,7 +15,7 @@
     
      <nav>
         <a href="index.php">HOME</a>
-        <a href="games.php">saved</a>
+        <a href="saved.php">saved</a>
         
 </nav>
 </header>
