@@ -65,3 +65,7 @@ I managed to get my add-button added, and now i am just working on having it wor
 ### 11/06/24
 ![alt text](image4.png)
 I managed to get my add button working with my form working, now i just need to adjust its visual and UI abit to make it more convenient and appealing.
+
+### 11/06/24
+![alt text] ![alt text](image-1.png)
+I managed to make my notes size adjustable and i changed the choice of my colour abit to make it the same colour, thus creating the consistentcy an dmake the ui more consistent.

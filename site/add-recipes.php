@@ -1,42 +1,33 @@
+
 <?php
 require '_functions.php';
-include 'partials/top.php'; 
-?>
-
-<h1> Cooking recipes database</h1>
-<link rel="stylesheet" href="styles.css">
-<link href="cooking-recipes.php">
-
-<?php
+include 'partials/top.php';
 
 consolelog($_POST, 'POST Data');
 $code = strtoupper($_POST['code']);//force to upper case for strtrouupper
 $name = $_POST['name'];
-$website = $_POST['website'];
+$website = $_POST['iframe']; // assuming this is the correct field
+
 echo ' code: ' . $code;
 echo ' name: ' . $name;
 echo ' website: ' . $website;
 
 $db = connectToDB();
 
-$query = 'INSERT INTO iframe (iframe, notes, description) VALUES (?,?,?)';
+$query = 'INSERT INTO iframe (iframe, notes, description) VALUES (:iframe, :notes, :description)';
 
+$stmt = $db->prepare($query);
+$stmt->bindParam(':iframe', $website);
+$stmt->bindParam(':notes', $code);
+$stmt->bindParam(':description', $name);
 
-      //setup a query to get all company info
-$query = 'SELECT * FROM company';
-//attempt to run the query
 try {
-    $stmt = $db ->prepare($query);
-    $stmt ->execute([$code,$name,$website]);
-}
-catch (PDOException $e) {
+    $stmt->execute();
+    echo '<p>success!!!</p>';
+} catch (PDOException $e) {
     consolelog($e->getMessage(), 'DB list fecth', ERROR);
     die('There was an error getting data from the database');
-
 }
-echo '<p>success!!!</p>';
-//see what we got back
 
-
-          include 'partials/bottom.php';
+include 'partials/bottom.php';
 ?>
