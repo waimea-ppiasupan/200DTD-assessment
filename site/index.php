@@ -37,21 +37,20 @@ consolelog($iframes);
       <h3>IFrame lol</h3>
 
       <?php foreach ($iframes as $iframe) : ?>
-        <iframe src="<?= htmlspecialchars($iframe['website']) ?>" title="<?= htmlspecialchars($iframe['id']) ?>"></iframe>
-      <?php endforeach; ?>
-
-      <ul id="company-list">
-        <?php foreach ($iframes as $iframe) : ?>
-          <li>
-            <a href="cooking-recipes.php?id=<?= htmlspecialchars($iframe['id']) ?>">
-              <?= htmlspecialchars($iframe['id']) ?>
-            </a>
-            <a href="<?= htmlspecialchars($iframe['website']) ?>">
- 
-            </a>
-          </li>
-        <?php endforeach; ?>
-      </ul>
+  <div class="iframe-container">
+    <iframe src="<?= htmlspecialchars($iframe['website']) ?>" title="<?= htmlspecialchars($iframe['id']) ?>"></iframe>
+    <ul class="company-list">
+      <li>
+        <a href="cooking-recipes.php?id=<?= htmlspecialchars($iframe['id']) ?>">
+          <?= htmlspecialchars($iframe['id']) ?>
+        </a>
+        <span class="visit-website-box">
+          <a href="<?= htmlspecialchars($iframe['website']) ?>">Visit Website</a>
+        </span>
+      </li>
+    </ul>
+  </div>
+<?php endforeach; ?>
 
       <div id="add-button">
         <a href="form-recipes.php">add</a>

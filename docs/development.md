@@ -69,3 +69,13 @@ I managed to get my add button working with my form working, now i just need to 
 ### 11/06/24
 ![alt text] ![alt text](image-1.png)
 I managed to make my notes size adjustable and i changed the choice of my colour abit to make it the same colour, thus creating the consistentcy an dmake the ui more consistent.
+
+### 11/06/24
+![alt text](image-2.png)
+I managed to get my saved page working, now I just need to add more functions to it.
+![alt text](image-3.png)
+This is how it looks like on phone for home page
+![alt text](image-4.png)
+This is how the add new iframe page look like on phone.
+![alt text](image-5.png)
+This is how the saved page looks like on phone.
