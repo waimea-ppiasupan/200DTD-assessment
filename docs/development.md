@@ -79,3 +79,6 @@ This is how it looks like on phone for home page
 This is how the add new iframe page look like on phone.
 ![alt text](image-5.png)
 This is how the saved page looks like on phone.
+
+### 11/06/24
+![alt text](image-6.png)

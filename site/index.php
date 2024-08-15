@@ -5,7 +5,7 @@ include 'partials/top.php';
 // Connect to the database
 $db = connectToDB();
 
-// Setup a query to get all iframe info
+// Get all iframe info
 $query = 'SELECT * FROM iframe';
 
 try {
@@ -13,14 +13,12 @@ try {
     $stmt->execute();
     $iframes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    consolelog($e->getMessage(), 'DB list fetch', ERROR);
+    echo 'Error: ' . $e->getMessage() . '<br>';
     die('There was an error getting data from the database');
 }
-
-// See what we got back
-consolelog($iframes);
 ?>
 
+<!-- HTML code starts here -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -32,29 +30,33 @@ consolelog($iframes);
   </head>
   <body>
     <main class="container">
-      <h1></h1>
       <h2>New stuff</h2>
       <h3>IFrame lol</h3>
 
-      <?php foreach ($iframes as $iframe) : ?>
-  <div class="iframe-container">
-    <iframe src="<?= htmlspecialchars($iframe['website']) ?>" title="<?= htmlspecialchars($iframe['id']) ?>"></iframe>
-    <ul class="company-list">
-      <li>
-        <a href="cooking-recipes.php?id=<?= htmlspecialchars($iframe['id']) ?>">
-          <?= htmlspecialchars($iframe['id']) ?>
-        </a>
-        <span class="visit-website-box">
-          <a href="<?= htmlspecialchars($iframe['website']) ?>">Visit Website</a>
-        </span>
-      </li>
-    </ul>
-  </div>
-<?php endforeach; ?>
-
-      <div id="add-button">
-        <a href="form-recipes.php">add</a>
+     <!-- Display existing iframes -->
+<?php if (!empty($iframes)) : ?>
+  <?php foreach ($iframes as $iframe) : ?>
+    <?php if (!empty($iframe['website_url'])) : ?>
+      <div class="iframe-group">
+        <div class="title-box">
+          <h4><?= htmlspecialchars($iframe['title']) ?></h4>
+          <a href="delete-iframe.php?id=<?= $iframe['id'] ?>">🗑</a>
+        </div>
+        <div class="iframe-container">
+          <iframe src="<?= htmlspecialchars($iframe['website_url']) ?>" frameborder="0" width="100%" height="300" alt="<?= htmlspecialchars($iframe['title']) ?>"></iframe>
+        </div>
       </div>
+    <?php endif; ?>
+  <?php endforeach; ?>
+<?php else : ?>
+  <p>No iframes found.</p>
+<?php endif; ?>
+
+      <!-- Add new iframe button -->
+      <div id="add-button">
+        <a href="form-recipes.php">Add </a>
+      </div>
+      
     </main>
   </body>
 </html>
