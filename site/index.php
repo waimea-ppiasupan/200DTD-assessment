@@ -38,10 +38,11 @@ try {
   <?php foreach ($iframes as $iframe) : ?>
     <?php if (!empty($iframe['website_url'])) : ?>
       <div class="iframe-group">
-        <div class="title-box">
-          <h4><?= htmlspecialchars($iframe['title']) ?></h4>
-          <a href="delete-iframe.php?id=<?= $iframe['id'] ?>">🗑</a>
-        </div>
+      <div class="title-box">
+  <h4><?= htmlspecialchars($iframe['title']) ?></h4>
+  <a href="delete-iframe.php?id=<?= $iframe['id'] ?>" class="delete-btn">🗑</a>
+  <a href="saved.php?id=<?= $iframe['id'] ?>" class="save-btn">★</a>
+</div>
         <div class="iframe-container">
           <iframe src="<?= htmlspecialchars($iframe['website_url']) ?>" frameborder="0" width="100%" height="300" alt="<?= htmlspecialchars($iframe['title']) ?>"></iframe>
         </div>
