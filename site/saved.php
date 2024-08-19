@@ -34,7 +34,7 @@ try {
       <h1>Saved Iframes</h1>
 
       <?php foreach ($iframes as $iframe) : ?>
-        <iframe src="<?= htmlspecialchars($iframe['website']) ?>" frameborder="0" width="100%" height="500"></iframe>
+        <iframe src="<?= htmlspecialchars($iframe['website_url']) ?>" frameborder="0" width="100%" height="500"></iframe>
       <?php endforeach; ?>
 
     </main>

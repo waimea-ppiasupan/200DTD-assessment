@@ -82,3 +82,6 @@ This is how the saved page looks like on phone.
 
 ### 11/06/24
 ![alt text](image-6.png)
+
+### 11/06/24
+![alt text](image-7.png)
