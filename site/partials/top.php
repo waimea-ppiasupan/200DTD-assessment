@@ -14,8 +14,8 @@
      <h1><?= SITE_NAME ?></h1>
     
      <nav>
-        <a href="index.php">HOME</a>
-        <a href="saved.php">saved</a>
+       
+       
         
 </nav>
 </header>

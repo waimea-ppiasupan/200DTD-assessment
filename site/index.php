@@ -1,8 +1,10 @@
 <?php
 require '_functions.php';
 include 'partials/top.php';
+?>
 
-// Connect to the database
+<!-- Connect to the database -->
+<?php
 $db = connectToDB();
 
 // Get all iframe info
@@ -13,8 +15,15 @@ try {
     $stmt->execute();
     $iframes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    echo 'Error: ' . $e->getMessage() . '<br>';
-    die('There was an error getting data from the database');
+    // Handle database error
+    $error = 'Error: ' . $e->getMessage();
+    include 'partials/error.php';
+    exit;
+}
+
+// Check if $iframes is empty
+if (empty($iframes)) {
+    $noIframesMessage = 'No iframes found in database.';
 }
 ?>
 
@@ -33,32 +42,40 @@ try {
       <h2>New stuff</h2>
       <h3>IFrame lol</h3>
 
-     <!-- Display existing iframes -->
-<?php if (!empty($iframes)) : ?>
-  <?php foreach ($iframes as $iframe) : ?>
-    <?php if (!empty($iframe['website_url'])) : ?>
-      <div class="iframe-group">
-      <div class="title-box">
-  <h4><?= htmlspecialchars($iframe['title']) ?></h4>
-  <a href="delete-iframe.php?id=<?= $iframe['id'] ?>" class="delete-btn">🗑</a>
-  <a href="saved.php?id=<?= $iframe['id'] ?>" class="save-btn">★</a>
-</div>
-        <div class="iframe-container">
-          <iframe src="<?= htmlspecialchars($iframe['website_url']) ?>" frameborder="0" width="100%" height="300" alt="<?= htmlspecialchars($iframe['title']) ?>"></iframe>
-        </div>
-      </div>
-    <?php endif; ?>
-  <?php endforeach; ?>
-<?php else : ?>
-  <p>No iframes found.</p>
-<?php endif; ?>
+      <!-- Display existing iframes -->
+      <?php if (!empty($iframes)) : ?>
+        <?php foreach ($iframes as $iframe) : ?>
+          <?php if (!empty($iframe['website_url'])) : ?>
+            <div class="draggable-iframe-group">
+              <div class="title-box">
+                <h4><?= htmlspecialchars($iframe['title']) ?></h4>
+                <div class="actions">
+                  <a href="<?= htmlspecialchars($iframe['website_url']) ?>" class="clip-btn">🔗</a>
+                  <a href="#" class="delete-btn" data-iframe-id="<?= $iframe['id'] ?>">🗑</a>
+                </div>
+              </div>
+              <div class="iframe-container">
+                <iframe src="<?= htmlspecialchars($iframe['website_url']) ?>" frameborder="0" width="100%" height="300" alt="<?= htmlspecialchars($iframe['title']) ?>"></iframe>
+                <div class="resizer"></div>
+              </div>
+            </div>
+          <?php endif; ?>
+        <?php endforeach; ?>
+      <?php else : ?>
+        <p><?= $noIframesMessage ?></p>
+      <?php endif; ?>
 
-      <!-- Add new iframe button -->
-      <div id="add-button">
-        <a href="form-recipes.php">Add </a>
-      </div>
-      
+     <!-- Add new iframe button -->
+<div id="add-button">
+  <a href="add-recipes.php" id="add-iframe-btn">Add </a>
+</div>
+     
+
     </main>
+
+    <!-- Include script.js file -->
+    <script src="js/script.js"></script>
+
   </body>
 </html>
 

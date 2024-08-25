@@ -60,14 +60,14 @@ consolelog($iframes);
 
       <?php foreach ($iframes as $iframe) : ?>
       <div class="iframe-container">
-        <iframe src="<?= htmlspecialchars($iframe['website']) ?>" title="<?= htmlspecialchars($iframe['id']) ?>"></iframe>
+        <iframe src="<?php echo htmlspecialchars($iframe['website']); ?>" title="<?php echo htmlspecialchars($iframe['id']); ?>"></iframe>
         <ul class="company-list">
           <li>
-            <a href="cooking-recipes.php?id=<?= htmlspecialchars($iframe['id']) ?>">
-              <?= htmlspecialchars($iframe['id']) ?>
+            <a href="cooking-recipes.php?id=<?php echo htmlspecialchars($iframe['id']); ?>">
+              <?php echo htmlspecialchars($iframe['id']); ?>
             </a>
             <span class="visit-website-box">
-              <a href="<?= htmlspecialchars($iframe['website']) ?>">Visit Website</a>
+              <a href="<?php echo htmlspecialchars($iframe['website']); ?>">Visit Website</a>
             </span>
           </li>
         </ul>
