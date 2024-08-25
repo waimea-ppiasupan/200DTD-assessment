@@ -2,83 +2,49 @@
 require '_functions.php';
 include 'partials/top.php';
 
-// Connect to the database
-$db = connectToDB();
+consolelog($_POST, 'POST Data');
 
-// Check if the form has been submitted
-if (!empty($_POST)) {
-    // Validate the user input
-    $iframe_id = (int) $_POST['iframe_id'];
-    $notes = htmlspecialchars($_POST['notes']);
-    $website = htmlspecialchars($_POST['website']);
+var_dump($_SERVER['REQUEST_METHOD']);
 
-    // Insert the data into the database
-    $query = 'INSERT INTO iframe (id, notes, website) VALUES (:id, :notes, :website)';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Get form data
+    $website_url = $_POST['website_url'];
+    $title = $_POST['title'];
+    $width = $_POST['width'];
+    $height = $_POST['height'];
+    $iframe_code = $_POST['iframe_code'];
+    $explanation = $_POST['explanation'];
+
+    echo ' Website URL: ' . $website_url;
+    echo ' Title: ' . $title;
+    echo ' Width: ' . $width;
+    echo ' Height: ' . $height;
+    echo ' iFrame Code: ' . $iframe_code;
+    echo ' Explanation: ' . $explanation;
+
+    $db = connectToDB();
+
+    $query = 'INSERT INTO iframe (website_url, title, width, height, iframe_code) VALUES (?,?,?,?,?)';
+    $query2 = 'INSERT INTO website_explanations (iframe_id, explanations) VALUES (?,?)';
+
     try {
         $stmt = $db->prepare($query);
-        $stmt->bindParam(':id', $iframe_id, PDO::PARAM_INT);
-        $stmt->bindParam(':notes', $notes, PDO::PARAM_STR);
-        $stmt->bindParam(':website', $website, PDO::PARAM_STR);
-        $stmt->execute();
-        consolelog('Data inserted successfully!');
+        $stmt->execute([$website_url, $title, $width, $height, $iframe_code]);
+
+        $iframe_id = $db->lastInsertId();
+
+        $stmt = $db->prepare($query2);
+        $stmt->execute([$iframe_id, $explanation]);
     } catch (PDOException $e) {
-        consolelog($e->getMessage(), 'DB insert', ERROR);
+        consolelog($e->getMessage(), 'DB insert error', ERROR);
         die('There was an error inserting data into the database');
     }
+
+    echo '<p>Recipe added successfully!</p>';
+} else {
+    echo 'Error: Form not submitted.';
+    var_dump($_SERVER['REQUEST_METHOD']);
 }
 
-// Setup a query to get all iframe info
-$query = 'SELECT * FROM iframe';
-try {
-    $stmt = $db->prepare($query);
-    $stmt->execute();
-    $iframes = $stmt->fetchAll(PDO::FETCH_ASSOC);
-} catch (PDOException $e) {
-    consolelog($e->getMessage(), 'DB list fetch', ERROR);
-    die('There was an error getting data from the database');
-}
-
-// See what we got back
-consolelog($iframes);
+include 'partials/bottom.php';
 ?>
-
-<!-- HTML output -->
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark" />
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Hello yes</title>
-  </head>
-  <body>
-    <main class="container">
-      <h1></h1>
-      <h2>New stuff</h2>
-      <h3>IFrame lol</h3>
-
-      <?php foreach ($iframes as $iframe) : ?>
-      <div class="iframe-container">
-        <iframe src="<?php echo htmlspecialchars($iframe['website']); ?>" title="<?php echo htmlspecialchars($iframe['id']); ?>"></iframe>
-        <ul class="company-list">
-          <li>
-            <a href="cooking-recipes.php?id=<?php echo htmlspecialchars($iframe['id']); ?>">
-              <?php echo htmlspecialchars($iframe['id']); ?>
-            </a>
-            <span class="visit-website-box">
-              <a href="<?php echo htmlspecialchars($iframe['website']); ?>">Visit Website</a>
-            </span>
-          </li>
-        </ul>
-      </div>
-      <?php endforeach; ?>
-
-      <div id="add-button">
-        <a href="form-recipes.php">add</a>
-      </div>
-    </main>
-  </body>
-</html>
-
-<?php include 'partials/bottom.php'; ?>

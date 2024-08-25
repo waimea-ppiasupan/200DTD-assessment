@@ -43,29 +43,30 @@ if (empty($iframes)) {
       <h3>IFrame lol</h3>
 
       <!-- Display existing iframes -->
-      <?php if (!empty($iframes)) : ?>
-        <?php foreach ($iframes as $iframe) : ?>
-          <?php if (!empty($iframe['website_url'])) : ?>
-            <div class="draggable-iframe-group">
-              <div class="title-box">
-                <h4><?= htmlspecialchars($iframe['title']) ?></h4>
-                <div class="actions">
-                  <a href="<?= htmlspecialchars($iframe['website_url']) ?>" class="clip-btn">🔗</a>
-                  <a href="#" class="delete-btn" data-iframe-id="<?= $iframe['id'] ?>">🗑</a>
-                </div>
-              </div>
-              <div class="iframe-container">
-                <iframe src="<?= htmlspecialchars($iframe['website_url']) ?>" frameborder="0" width="100%" height="300" alt="<?= htmlspecialchars($iframe['title']) ?>"></iframe>
-                <div class="resizer"></div>
-              </div>
-            </div>
-          <?php endif; ?>
-        <?php endforeach; ?>
-      <?php else : ?>
-        <p><?= $noIframesMessage ?></p>
-      <?php endif; ?>
+<?php if (!empty($iframes)) : ?>
+  <?php foreach ($iframes as $iframe) : ?>
+    <?php if (!empty($iframe['website_url'])) : ?>
+      <div class="draggable-iframe-group">
+        <div class="title-box">
+          <h4><?= htmlspecialchars($iframe['title']) ?></h4>
+          <div class="actions">
+            <a href="<?= htmlspecialchars($iframe['website_url']) ?>" class="clip-btn">🔗</a>
+            <a href="#" class="delete-btn" data-iframe-id="<?= $iframe['id'] ?>">🗑</a>
+            <a href="explanation.php?id=<?= $iframe['id'] ?>" class="explanation-btn">...</a>
+          </div>
+        </div>
+        <div class="iframe-container">
+          <iframe src="<?= htmlspecialchars($iframe['website_url']) ?>" frameborder="0" width="100%" height="300" alt="<?= htmlspecialchars($iframe['title']) ?>"></iframe>
+          <div class="resizer"></div>
+        </div>
+      </div>
+    <?php endif; ?>
+  <?php endforeach; ?>
+<?php else : ?>
+  <p><?= $noIframesMessage ?></p>
+<?php endif; ?>
 
-     <!-- Add new iframe button -->
+<!-- Add new iframe button -->
 <div id="add-button">
   <a href="add-recipes.php" id="add-iframe-btn">Add </a>
 </div>
