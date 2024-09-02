@@ -85,3 +85,8 @@ This is how the saved page looks like on phone.
 
 ### 11/06/24
 ![alt text](image-7.png)
+For this screenshot I managed to add a delete button in the titlebox and a clip symbol which take you from the iframe to the website, I made them in the title box becasue it looks better and easier for the end user since everything can be find in the title box. I made the delete button red to indicate that it is a delete button.
+### 11/06/24
+![alt text](image-8.png)
+In this screenshot i made the iframe draggable so the user can drag the iframe to adjust the size, although now It seems there is an error in my form and my delete button, I'm trying to fix it next. Also I removed the colour red from the delete button because I think it looks terrible and dosen't macth with the blue, And so I just make it white just to make it blends in.
+
