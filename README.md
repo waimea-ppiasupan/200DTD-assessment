@@ -10,21 +10,11 @@ This project is a system allows a user to store recipes websoite that they can e
 - allows users to browse various cooking recipes
 
 
-
-
-## system design
-
-All of the initial design for the system can be found [here](design.md) 
-
-Testing of features and further design revisions can be found [here](testing.md)
-
-## project Mascot
-
-![alt text](images/Healthy-Food-PNG-Picture.png)
+![alt text](docs/images/Healthy-Food-PNG-Picture.png)
 
 ## Documentation
 
 The following documents support this project:
 
-- [Design & Review](Design.md)
-- [Development & Testing](Development.md)
+- [Design & Review](docs/Design.md)
+- [Development & Testing](docs/Development.md)
